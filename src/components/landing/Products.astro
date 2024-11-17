@@ -1,107 +1,112 @@
 ---
 import Image from "astro/components/Image.astro";
-import macha from "../../images/macha.jpg";
-import kombucha from "../../images/kombucha.jpg";
-import chia from "../../images/chia.jpg";
-import maca from "../../images/maca.webp";
+import coco from "../../images/coco.jpg";
+import rollo from "../../images/rollo.jpg";
+import surtido from "../../images/surtido.jpg";
+import frances from "../../images/frances.jpg";
+import francesDetalle from "../../images/frances-detalle.jpg";
 ---
 
-<main>
-  <div class="relative mx-auto px-8 max-w-7xl py-12 md:px-12">
-    <div class="grid grid-cols-1 gap-6 lg:gap-y-32 md:grid-cols-2">
-      <figure>
-        <Image
-          class="w-full rounded-3xl shadow-2xl aspect-square object-cover"
-          src={macha}
-          width={600}
-          height={600 / 1.5}
-          alt=""
-        />
-        <div class="mt-4 flex justify-between px-6">
-          <div>
-            <h3 class="text-sm text-negroni-500">
-              <a href="#">
-                <span aria-hidden="true" class="absolute inset-0"></span>
-                Té matcha
-              </a>
-            </h3>
-            <p class="mt-1 text-lg font-medium leading-6 text-white">
-              Aumenta la energía y mejora la función cerebral
-            </p>
-          </div>
-          <p class="text-base text-tomato-500">$15</p>
-        </div>
-      </figure>
-      <figure>
-        <Image
-          class="w-full rounded-3xl shadow-2xl aspect-square object-cover"
-          src={kombucha}
-          alt=""
-          width="1310"
-          width={600}
-          height={600 / 1.5}
-        />
-        <div class="mt-4 flex justify-between px-6">
-          <div>
-            <h3 class="text-sm text-negroni-500">
-              <a href="#">
-                <span aria-hidden="true" class="absolute inset-0"></span>
-                kombucha
-              </a>
-            </h3>
-            <p class="mt-1 text-lg font-medium leading-6 text-white">
-              Mejora la digestión y fortalece el sistema inmunológico
-            </p>
-          </div>
-          <p class="text-base text-tomato-500">$20</p>
-        </div>
-      </figure>
-      <figure>
-        <Image
-          class="w-full rounded-3xl shadow-2xl aspect-square object-cover"
-          src={chia}
-          width={600}
-          height={600 / 1.5}
-          alt=""
-        />
-        <div class="mt-4 flex justify-between px-6">
-          <div>
-            <h3 class="text-sm text-negroni-500">
-              <a href="#">
-                <span aria-hidden="true" class="absolute inset-0"></span>
-                Chía
-              </a>
-            </h3>
-            <p class="mt-1 text-lg font-medium leading-6 text-white">
-              Controla el apetito
-            </p>
-          </div>
-          <p class="text-base text-tomato-500">$5</p>
-        </div>
-      </figure>
-      <figure>
-        <Image
-          class="w-full rounded-3xl shadow-2xl aspect-square object-cover"
-          width={600}
-          height={600 / 1.5}
-          src={maca}
-          alt=""
-        />
-        <div class="mt-4 flex justify-between px-6">
-          <div>
-            <h3 class="text-sm text-negroni-500">
-              <a href="#">
-                <span aria-hidden="true" class="absolute inset-0"></span>
-                Maca
-              </a>
-            </h3>
-            <p class="mt-1 text-lg font-medium leading-6 text-white">
-              Mejora el estado de ánimo y aumenta la libido
-            </p>
-          </div>
-          <p class="text-base text-tomato-500">$35</p>
-        </div>
-      </figure>
+<div class="grid grid-cols-1 gap-6 lg:gap-y-32 md:grid-cols-2">
+  <figure>
+    <Image
+      class="w-full rounded-3xl shadow-2xl aspect-square object-cover"
+      src={coco}
+      width={600}
+      height={600 / 1.5}
+      alt=""
+    />
+    <div class="mt-4 flex justify-between px-6">
+      <div>
+        <h3 class="text-sm text-negroni-500">
+          <a href="#"> Producto Coco </a>
+        </h3>
+        <p class="mt-1 text-lg font-medium leading-6 text-white">
+          Producto coco
+        </p>
+      </div>
+      <p class="text-base text-tomato-500">$15</p>
     </div>
-  </div>
-</main>
+  </figure>
+  <figure>
+    <Image
+      class="w-full rounded-3xl shadow-2xl aspect-square object-cover"
+      src={rollo}
+      alt=""
+      width="1310"
+      width={600}
+      height={600 / 1.5}
+    />
+    <div class="mt-4 flex justify-between px-6">
+      <div>
+        <h3 class="text-sm text-negroni-500">
+          <a href="#"> Producto Rollo </a>
+        </h3>
+        <p class="mt-1 text-lg font-medium leading-6 text-white">
+          Producto rollo
+        </p>
+      </div>
+      <p class="text-base text-tomato-500">$20</p>
+    </div>
+  </figure>
+  <figure>
+    <Image
+      class="w-full rounded-3xl shadow-2xl aspect-square object-cover"
+      src={surtido}
+      width={600}
+      height={600 / 1.5}
+      alt=""
+    />
+    <div class="mt-4 flex justify-between px-6">
+      <div>
+        <h3 class="text-sm text-negroni-500">
+          <a href="#"> Producto Surtido </a>
+        </h3>
+        <p class="mt-1 text-lg font-medium leading-6 text-white">
+          Producto Surtido
+        </p>
+      </div>
+      <p class="text-base text-tomato-500">$5</p>
+    </div>
+  </figure>
+  <figure>
+    <Image
+      class="w-full rounded-3xl shadow-2xl aspect-square object-cover"
+      width={600}
+      height={600 / 1.5}
+      src={frances}
+      alt=""
+    />
+    <div class="mt-4 flex justify-between px-6">
+      <div>
+        <h3 class="text-sm text-negroni-500">
+          <a href="#"> Producto frances </a>
+        </h3>
+        <p class="mt-1 text-lg font-medium leading-6 text-white">
+          Producto Frances
+        </p>
+      </div>
+      <p class="text-base text-tomato-500">$35</p>
+    </div>
+  </figure>
+  <figure>
+    <Image
+      class="w-full rounded-3xl shadow-2xl aspect-square object-cover"
+      width={600}
+      height={600 / 1.5}
+      src={francesDetalle}
+      alt=""
+    />
+    <div class="mt-4 flex justify-between px-6">
+      <div>
+        <h3 class="text-sm text-negroni-500">
+          <a href="#"> Producto Frances </a>
+        </h3>
+        <p class="mt-1 text-lg font-medium leading-6 text-white">
+          Producto frances detalle
+        </p>
+      </div>
+      <p class="text-base text-tomato-500">$35</p>
+    </div>
+  </figure>
+</div>

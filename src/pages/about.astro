@@ -1,0 +1,48 @@
+---
+import Main from "../components/Main.astro";
+import Layout from "../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import family from "../images/family.jpg";
+---
+
+<Layout>
+  <Main>
+    <div class="grid grid-cols-1 gap-6 lg:gap-y-32 md:grid-cols-2">
+      <Image
+        class="sm:w-full rounded-3xl shadow-2xl aspect-square object-cover"
+        width={600}
+        src={family}
+        alt=""
+      />
+
+      <div>
+        <p
+          class="text-negroni-500 font-bold md:text-3xl text-xl tracking-tight"
+        >
+          Nuestra historia
+        </p>
+        <p class="mt-4 text-white">
+          Inspirados por la majestuosa cordillera de los Andes, creamos
+          Panificadora Los Andes, un espacio donde la tradición se fusiona con
+          la innovación. Nuestra historia comienza con un sueño: ofrecer panes
+          artesanales, elaborados con ingredientes naturales y técnicas
+          modernas, para satisfacer los paladares más exigentes.
+        </p>
+
+        <p
+          class="mt-12 text-negroni-500 font-bold md:text-3xl text-xl tracking-tight"
+        >
+          Nuestra misión
+        </p>
+        <p class="mt-4 text-white">
+          Nuestra misión es ofrecer una experiencia panadera única, combinando
+          recetas tradicionales con técnicas de vanguardia. Buscamos sorprender
+          a nuestros clientes con productos innovadores y deliciosos, sin perder
+          de vista la calidad y el sabor auténtico. Queremos ser más que una
+          panadería, queremos ser un referente en la elaboración de productos
+          artesanales y contribuir al desarrollo de nuestra comunidad.
+        </p>
+      </div>
+    </div>
+  </Main>
+</Layout>
