@@ -1,6 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import "../styles/style.css";
+
 import logo from "../images/panificadora-logo.jpg";
 const url = "https://losandesdev.netlify.app";
 ---
@@ -26,7 +27,7 @@ const url = "https://losandesdev.netlify.app";
   property="og:description"
   content="Pan, elaborado artesanalmente y con ingredientes frescos"
 />
-<meta property="og:image" content=`${url}${logo.src}` />
+<meta property="og:image" itemprop="image" content={logo.src} />
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -37,4 +38,4 @@ const url = "https://losandesdev.netlify.app";
   name="twitter:description"
   content="Pan, elaborado artesanalmente y con ingredientes frescos"
 />
-<meta name="twitter:image" content=`${url}${logo.src}` />
+<meta name="twitter:image" itemprop="image" content={logo.src} />
